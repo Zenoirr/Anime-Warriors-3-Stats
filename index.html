@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LOADOUTS</title>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>ANIME WARRIORS 3 - WIKI</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0a0b0f;--sur:#111318;--sur2:#181b22;--bd:rgba(255,255,255,.07);--bd2:rgba(255,255,255,.12);--tx:#e8eaf0;--mu:#6b7080;--ft:'Rajdhani',sans-serif;--fb:'Exo 2',sans-serif;--c-ss:#f87171;--c-sp:#fb923c;--c-s:#facc15;--c-a:#a78bfa;--c-b:#38bdf8;--c-c:#4ade80;--sb:8px;--sbr:4px}
+:root{--bg:#0a0b0f;--sur:#111318;--sur2:#181b22;--bd:rgba(255,255,255,.07);--bd2:rgba(255,255,255,.12);--tx:#e8eaf0;--mu:#6b7080;--ft:'Inter',sans-serif;--fb:'Inter',sans-serif;--c-ss:#f87171;--c-sp:#fb923c;--c-s:#facc15;--c-a:#a78bfa;--c-b:#38bdf8;--c-c:#4ade80;--sb:8px;--sbr:4px}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}::-webkit-scrollbar{width:var(--sb);height:var(--sb)}::-webkit-scrollbar-track{background:var(--sur);border-radius:var(--sbr)}::-webkit-scrollbar-thumb{background:rgba(255,255,255,.14);border-radius:var(--sbr)}::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,.25)}*{scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.14) var(--sur)}
 html,body{height:100%;overflow:hidden}body{background:var(--bg);color:var(--tx);font-family:var(--fb);display:flex;flex-direction:column}body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0}#root{position:relative;z-index:1;display:flex;flex-direction:column;height:100%}
 .hd{text-align:center;padding:26px 22px 0;flex-shrink:0}.hd h1{font-family:var(--ft);font-size:clamp(26px,4vw,48px);font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.1;margin-bottom:5px;background:linear-gradient(135deg,#fff 25%,#f87171 55%,#a78bfa 85%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.hd p{color:var(--mu);font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-weight:300}
@@ -19,29 +19,713 @@ html,body{height:100%;overflow:hidden}body{background:var(--bg);color:var(--tx);
 .r-common{color:#9ca3af;border-color:rgba(156,163,175,.4)}.r-rare{color:#60a5fa;border-color:rgba(96,165,250,.4)}.r-epic{color:#c084fc;border-color:rgba(192,132,252,.4)}.r-legendary{color:#facc15;border-color:rgba(250,204,21,.4)}.r-mythical{color:#f87171;border-color:rgba(248,113,113,.4)}.r-exclusive{color:#ff4dff;border-color:rgba(255,77,255,.4)}
 .ult-box,.tf-box,.sp-box{margin-top:7px}.ult-box{padding:7px 9px;border-radius:4px;background:rgba(255,255,255,.03);border:1px solid var(--bd)}.ult-ttl{font-family:var(--ft);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:3px;color:#a78bfa}.ult-nm{font-size:12px;font-weight:600;font-family:var(--ft);letter-spacing:.04em;color:#fff;margin-bottom:2px}.ult-dsc{font-size:9px;color:var(--mu);font-weight:300;line-height:1.4}.ult-cd{font-size:10px;font-family:var(--ft);font-weight:600;margin-top:4px;color:#a78bfa}.ult-xtra{font-size:9px;color:#a78bfa;font-weight:300;margin-top:2px;font-style:italic}.sp-item{font-size:9px;color:#fbbf24;font-weight:300;padding:3px 6px;border-radius:3px;background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.2);line-height:1.4}.tf-box{padding:6px 8px;border-radius:4px;background:rgba(74,222,128,.04);border:1px solid rgba(74,222,128,.18);font-size:9px;color:#9ca3af}.tf-ttl{font-family:var(--ft);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#4ade80;margin-bottom:3px}
 .load-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}.lc{background:var(--sur);border:1px solid var(--bd);border-radius:10px;overflow:hidden}.lc-hd{display:flex;align-items:center;gap:11px;padding:13px 17px}.lc-ico{width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}.lc-tw{flex:1;min-width:0}.lc-ttl{font-family:var(--ft);font-size:16px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;line-height:1;margin-bottom:2px}.lc-sub{font-size:11px;color:var(--mu);font-weight:300;letter-spacing:.04em}.lc-tot{font-family:var(--ft);font-size:12px;font-weight:700;padding:4px 9px;border-radius:4px;border:1px solid;white-space:nowrap}.lc-bd{padding:0 17px 17px}.lc-dsc{font-size:12px;color:var(--mu);font-weight:300;padding:11px 0 13px;border-top:1px solid var(--bd)}.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;margin-bottom:11px}.sw{display:flex;flex-direction:column;gap:5px}.sl-lbl{font-family:var(--ft);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}.lac{background:var(--sur2);border:1px solid var(--bd);border-radius:8px;padding:9px 11px;position:relative;overflow:hidden;flex:1}.lac-nm{font-family:var(--ft);font-size:13px;font-weight:600;color:#fff;margin-bottom:6px;display:flex;justify-content:space-between;align-items:center;gap:5px}.lac-st{display:flex;flex-wrap:wrap;gap:4px}.sp,.tpp{display:inline-flex;align-items:center;gap:4px;font-family:var(--ft);font-size:11px;font-weight:700;padding:3px 7px;border-radius:4px;border:1px solid}.tpp{font-size:13px;padding:4px 10px}.sp-dot,.tpp-dot{width:5px;height:5px;border-radius:50%;flex-shrink:0}.tpp-dot{width:6px;height:6px}.ts{padding-top:11px;border-top:1px solid var(--bd)}.ts-ttl{font-family:var(--ft);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);margin-bottom:7px}.tp{display:flex;flex-wrap:wrap;gap:5px}
-
 .footer-credit{flex-shrink:0;text-align:center;padding:9px 0 12px;color:#8b91a0;font-family:var(--ft);font-size:13px;font-weight:600;letter-spacing:.08em}.made-zenoir{color:#c084fc;text-shadow:0 0 10px rgba(192,132,252,.35)}.made-novaz{color:#38bdf8;text-shadow:0 0 10px rgba(56,189,248,.35)}.relic-note{margin-top:8px;color:#facc15;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
 @media(max-width:720px){.nav-tab{padding:10px 16px}.pane{padding:16px}.lv-sl{min-width:180px}.cg{grid-template-columns:1fr}.load-grid{grid-template-columns:1fr}}
+.feedback-top{
+  display:flex;
+  justify-content:center;
+  margin-top:14px;
+}
+.feedback-button{
+  font-family:var(--ft);
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.08em;
+  color:#fff;
+  background:var(--sur);
+  border:1px solid var(--bd2);
+  border-radius:10px;
+  padding:10px 18px;
+  cursor:pointer;
+}
+.feedback-button:hover{
+  border-color:rgba(167,139,250,.55);
+  color:#c4b5fd;
+}
+.feedback-layer{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+  background:rgba(0,0,0,.72);
+}
+.feedback-layer.open{
+  display:flex;
+}
+.feedback-panel{
+  width:100%;
+  max-width:430px;
+  background:#111318;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:14px;
+  padding:18px;
+  box-shadow:0 20px 60px rgba(0,0,0,.5);
+}
+.feedback-panel h2{
+  font-family:var(--ft);
+  font-size:24px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+.feedback-panel label{
+  display:block;
+  margin:10px 0 5px;
+  font-family:var(--ft);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--mu);
+}
+.feedback-panel select,
+.feedback-panel input,
+.feedback-panel textarea{
+  width:100%;
+  background:#181b22;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:8px;
+  color:#fff;
+  padding:10px;
+  font-family:var(--fb);
+  font-size:14px;
+  outline:none;
+}
+.feedback-panel textarea{
+  min-height:120px;
+  resize:vertical;
+}
+.feedback-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.feedback-actions{
+  display:flex;
+  gap:10px;
+  margin-top:14px;
+}
+.feedback-actions button{
+  flex:1;
+  border-radius:8px;
+  padding:10px;
+  cursor:pointer;
+  font-family:var(--ft);
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.08em;
+}
+.feedback-send{
+  background:#a78bfa;
+  border:1px solid #a78bfa;
+  color:#fff;
+}
+.feedback-cancel{
+  background:#181b22;
+  border:1px solid rgba(255,255,255,.12);
+  color:#cbd5e1;
+}
+.feedback-message{
+  min-height:16px;
+  margin-top:10px;
+  color:#9ca3af;
+  font-size:12px;
+}
+@media(max-width:720px){
+  .feedback-row{
+    grid-template-columns:1fr;
+  }
+}
+.update-button{font-family:var(--ft);font-size:14px;font-weight:700;letter-spacing:.08em;color:#fff;background:var(--sur);border:1px solid var(--bd2);border-radius:10px;padding:10px 18px;cursor:pointer}
+.update-button:hover{border-color:rgba(250,204,21,.55);color:#facc15}
+.feedback-top{gap:10px}
+.update-layer{position:fixed;inset:0;z-index:9998;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(0,0,0,.72)}
+.update-layer.open{display:flex}
+.update-panel{width:100%;max-width:460px;background:#111318;border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:18px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.update-panel h2{font-family:var(--ft);font-size:24px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.update-version{color:#facc15;font-family:var(--ft);font-size:13px;font-weight:700;letter-spacing:.08em;margin-bottom:12px}
+.update-list{display:flex;flex-direction:column;gap:8px;margin:12px 0 16px}
+.update-item{color:#cbd5e1;font-size:13px;line-height:1.45;padding:8px 10px;border:1px solid rgba(255,255,255,.08);border-radius:8px;background:rgba(255,255,255,.035)}
+.update-close{width:100%;border-radius:8px;padding:10px;cursor:pointer;font-family:var(--ft);font-size:13px;font-weight:700;letter-spacing:.08em;background:#181b22;border:1px solid rgba(255,255,255,.12);color:#cbd5e1}
+.update-sublist{margin-top:6px;padding-left:14px;display:flex;flex-direction:column;gap:4px}
+.update-subitem{font-size:12px;color:#94a3b8;line-height:1.35}
+
+.extra-tabs-wrap{display:flex;flex-direction:column;gap:14px}
+.mini-tabs{display:flex;gap:7px;flex-wrap:wrap;justify-content:center;margin-bottom:18px}
+.mini-tab{font-family:var(--ft);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:7px 14px;border-radius:5px;border:1px solid var(--bd2);background:var(--sur);color:var(--mu);cursor:pointer}
+.mini-tab.on{background:rgba(167,139,250,.15);color:#a78bfa;border-color:rgba(167,139,250,.5)}
+.extra-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.extra-card{background:var(--sur);border:1px solid var(--bd);border-radius:8px;padding:12px;position:relative;overflow:hidden}
+.extra-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:#a78bfa}
+.extra-title{font-family:var(--ft);font-size:16px;font-weight:700;color:#fff;letter-spacing:.05em;margin-bottom:5px}
+.extra-sub{font-size:11px;color:var(--mu);line-height:1.4;margin-bottom:8px}
+.extra-stat{display:flex;justify-content:space-between;gap:8px;font-size:12px;border-top:1px solid var(--bd);padding-top:7px;margin-top:7px}
+.extra-stat span:first-child{color:#9ca3af}
+.extra-stat span:last-child{font-family:var(--ft);font-weight:700;color:#f87171}
+.extra-list{display:flex;flex-direction:column;gap:8px}
+.extra-row{background:var(--sur);border:1px solid var(--bd);border-radius:8px;padding:10px 12px}
+.extra-row-title{font-family:var(--ft);font-size:15px;font-weight:700;color:#fff;letter-spacing:.04em;margin-bottom:4px}
+.extra-row-line{font-size:12px;color:#cbd5e1;line-height:1.45}
+.extra-row-source{font-size:11px;color:#9ca3af;line-height:1.45;margin-top:5px}
+.drop-source{display:block;color:#cbd5e1}
+.source-tag{display:inline-block;font-family:var(--ft);font-size:10px;font-weight:700;color:#a78bfa;letter-spacing:.08em;text-transform:uppercase;margin-right:4px}
+
+
+body{font-size:15px}
+.hd p{font-size:12px}
+.nav-tab{font-size:16px}
+.lg-ttl,.sl-lbl,.ts-ttl{font-size:11px}
+.lg-item{font-size:12px}
+.lv-lbl{font-size:13px}
+.lv-note{font-size:11px}
+.flt-btn,.sub-btn,.mini-tab{font-size:13px}
+.tb-desc{font-size:12px}
+.ac-nm{font-size:15px}
+.ac-dsc{font-size:12px}
+.sr{font-size:12px}
+.sv{font-size:13px}
+.extra-title{font-size:17px}
+.extra-sub,.extra-row-line,.extra-row-source{font-size:13px}
+.drop-meta{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:4px 0 9px}
+.drop-pill{font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--mu);font-weight:600;padding:3px 6px;border-radius:4px;border:1px solid var(--bd);background:rgba(255,255,255,.035)}
+.drop-card{background:var(--sur);border:1px solid var(--bd);border-radius:8px;padding:11px 12px;position:relative;overflow:hidden}
+.drop-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--drop-color,#a78bfa)}
+.drop-name{font-family:var(--ft);font-size:16px;font-weight:750;color:#fff;letter-spacing:.03em}
+.drop-sources{display:flex;flex-direction:column;gap:5px;margin-top:8px}
+.drop-line{font-size:13px;color:#cbd5e1;line-height:1.35;padding:6px 8px;border-radius:6px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.06)}
+.drop-rarity-title{display:flex;align-items:center;gap:10px;margin:18px 0 9px}
+.drop-rarity-title span{font-family:var(--ft);font-size:17px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.drop-rarity-title::after{content:'';height:1px;flex:1;background:var(--bd)}
+.info-note{background:rgba(250,204,21,.08);border:1px solid rgba(250,204,21,.25);border-radius:8px;padding:10px 12px;color:#facc15;font-size:13px;font-weight:600;margin-bottom:14px;text-align:center}
+
+
+:root{
+  --bg:#070910;
+  --sur:#111620;
+  --sur2:#171d29;
+  --bd:rgba(255,255,255,.10);
+  --bd2:rgba(255,255,255,.18);
+  --tx:#f3f4f8;
+  --mu:#9aa3b5;
+}
+body{
+  background:
+    radial-gradient(circle at 18% 8%,rgba(248,113,113,.12),transparent 24%),
+    radial-gradient(circle at 82% 10%,rgba(167,139,250,.14),transparent 28%),
+    radial-gradient(circle at 50% 110%,rgba(56,189,248,.10),transparent 30%),
+    var(--bg);
+}
+body::before{
+  opacity:.72;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:42px 42px;
+  mask-image:linear-gradient(to bottom,black 0%,black 75%,transparent 100%);
+}
+#root{
+  background:linear-gradient(180deg,rgba(255,255,255,.025),transparent 160px);
+}
+.hd{
+  padding:28px 22px 14px;
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.hd h1{
+  font-size:clamp(30px,4.4vw,54px);
+  letter-spacing:.12em;
+  filter:drop-shadow(0 0 22px rgba(248,113,113,.18));
+  background:linear-gradient(135deg,#fff 15%,#ff8a8a 42%,#c4b5fd 72%,#7dd3fc 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.hd p{
+  color:#b4bdcf;
+  letter-spacing:.18em;
+}
+.feedback-top{
+  margin-top:14px;
+}
+.feedback-button,
+.update-button{
+  background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.025));
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 10px 28px rgba(0,0,0,.24), inset 0 1px 0 rgba(255,255,255,.08);
+  backdrop-filter:blur(8px);
+}
+.feedback-button:hover,
+.update-button:hover{
+  transform:translateY(-1px);
+  box-shadow:0 14px 34px rgba(0,0,0,.30),0 0 20px rgba(167,139,250,.12);
+}
+.nav{
+  padding:16px 22px 0;
+  gap:8px;
+  background:rgba(7,9,16,.45);
+  backdrop-filter:blur(10px);
+}
+.nav-tab{
+  border-radius:12px 12px 0 0;
+  padding:12px 18px;
+  color:#8d96aa;
+}
+.nav-tab:hover{
+  color:#f3f4f8;
+  background:rgba(255,255,255,.04);
+}
+.nav-tab.on{
+  background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.025));
+  border-color:rgba(255,255,255,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+}
+.pane{
+  padding:24px;
+}
+.lg,.lv-bar{
+  background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));
+  border:1px solid rgba(255,255,255,.11);
+  border-radius:14px;
+  box-shadow:0 12px 34px rgba(0,0,0,.16);
+}
+.lg-ttl,.lv-lbl,.sl-lbl,.ts-ttl{
+  color:#b5bfd0;
+}
+.lv-sl{
+  height:7px;
+  background:linear-gradient(90deg,rgba(167,139,250,.55),rgba(56,189,248,.35));
+}
+.lv-sl::-webkit-slider-thumb{
+  background:#f3f4f8;
+  border:3px solid #a78bfa;
+  box-shadow:0 0 0 4px rgba(167,139,250,.18),0 0 18px rgba(167,139,250,.45);
+}
+.lv-sl::-moz-range-thumb{
+  background:#f3f4f8;
+  border:3px solid #a78bfa;
+  box-shadow:0 0 0 4px rgba(167,139,250,.18),0 0 18px rgba(167,139,250,.45);
+}
+.flt-btn,.sub-btn,.mini-tab{
+  border-radius:999px;
+  background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,255,255,.12);
+}
+.flt-btn.on,.sub-btn.on,.mini-tab.on{
+  background:linear-gradient(135deg,rgba(167,139,250,.20),rgba(56,189,248,.10));
+  box-shadow:0 0 18px rgba(167,139,250,.10);
+}
+.tb{
+  background:rgba(255,255,255,.015);
+  border:1px solid rgba(255,255,255,.055);
+  border-radius:16px;
+  padding:14px;
+}
+.tb-badge{
+  border-radius:10px;
+}
+.cg,.extra-grid{
+  gap:12px;
+}
+.ac,.extra-card,.extra-row,.drop-card,.lac,.lc{
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.065),rgba(255,255,255,.025)),
+    var(--sur);
+  border:1px solid rgba(255,255,255,.105);
+  border-radius:14px;
+  box-shadow:0 10px 28px rgba(0,0,0,.18);
+}
+.ac:hover,.extra-card:hover,.extra-row:hover,.drop-card:hover{
+  border-color:rgba(255,255,255,.20);
+  transform:translateY(-2px);
+  box-shadow:0 16px 34px rgba(0,0,0,.25);
+}
+.ac::before,.extra-card::before,.drop-card::before{
+  height:3px;
+}
+.ac-rar,.ac-tag,.ac-aff,.ac-tp,.drop-pill{
+  border-radius:999px;
+}
+.ult-box,.tf-box,.sp-item{
+  border-radius:10px;
+}
+.lc{
+  border-radius:16px;
+}
+.lc-hd{
+  background:linear-gradient(135deg,rgba(255,255,255,.055),transparent);
+}
+.footer-credit{
+  background:rgba(7,9,16,.72);
+  border-top:1px solid rgba(255,255,255,.07);
+}
+.info-note{
+  background:linear-gradient(135deg,rgba(250,204,21,.12),rgba(251,146,60,.07));
+  border-color:rgba(250,204,21,.28);
+  box-shadow:0 8px 24px rgba(0,0,0,.14);
+}
+.modifier-card{
+  background:
+    radial-gradient(circle at 0% 0%,var(--mod-glow,rgba(167,139,250,.14)),transparent 42%),
+    linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.025)),
+    var(--sur);
+  border:1px solid var(--mod-border,rgba(255,255,255,.12));
+  border-radius:14px;
+  padding:13px;
+  box-shadow:0 12px 30px rgba(0,0,0,.20);
+  position:relative;
+  overflow:hidden;
+}
+.modifier-card::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:3px;
+  background:var(--mod-color,#a78bfa);
+}
+.modifier-card:hover{
+  transform:translateY(-2px);
+  border-color:var(--mod-hover,rgba(255,255,255,.22));
+}
+.modifier-title{
+  font-family:var(--ft);
+  font-size:17px;
+  font-weight:800;
+  color:#fff;
+  letter-spacing:.035em;
+  margin-bottom:8px;
+}
+.modifier-lines{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin-bottom:8px;
+}
+.modifier-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  font-family:var(--ft);
+  font-size:12px;
+  font-weight:800;
+  color:var(--mod-color,#a78bfa);
+  border:1px solid var(--mod-border,rgba(167,139,250,.35));
+  background:var(--mod-soft,rgba(167,139,250,.10));
+  border-radius:999px;
+  padding:5px 8px;
+}
+.modifier-pill::before{
+  content:'';
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--mod-color,#a78bfa);
+  box-shadow:0 0 10px var(--mod-color,#a78bfa);
+}
+.modifier-desc{
+  color:#b7c0d1;
+  font-size:13px;
+  line-height:1.45;
+}
+.drop-rarity-title{
+  margin-top:22px;
+}
+.drop-name{
+  font-size:17px;
+}
+.drop-line{
+  background:rgba(255,255,255,.045);
+}
+@media(max-width:720px){
+  .pane{padding:16px}
+  .nav{gap:5px;padding-left:14px;padding-right:14px}
+  .nav-tab{padding:10px 13px;font-size:14px}
+  .hd{padding-top:24px}
+}
+
+
+.ac,.extra-card,.extra-row,.drop-card,.lac,.lc,.modifier-card,.lg,.lv-bar,.tb{
+  border-color:rgba(255,255,255,.075)!important;
+  box-shadow:0 12px 34px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.045)!important;
+}
+.ac:hover,.extra-card:hover,.extra-row:hover,.drop-card:hover,.modifier-card:hover{
+  border-color:rgba(255,255,255,.145)!important;
+  box-shadow:0 18px 42px rgba(0,0,0,.28), 0 0 22px rgba(167,139,250,.055)!important;
+}
+.drop-card,.extra-card,.modifier-card,.ac,.lc{
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.018)),
+    rgba(15,20,30,.92)!important;
+}
+.drop-line{
+  border-color:rgba(255,255,255,.045)!important;
+  background:rgba(255,255,255,.028)!important;
+}
+.feedback-layer,.update-layer{
+  backdrop-filter:blur(12px);
+  animation:fadeLayer .18s ease both;
+}
+.feedback-panel,.feedback-box,.update-panel{
+  background:
+    radial-gradient(circle at 15% 0%,rgba(167,139,250,.15),transparent 35%),
+    radial-gradient(circle at 85% 0%,rgba(56,189,248,.11),transparent 35%),
+    linear-gradient(180deg,rgba(22,28,40,.98),rgba(12,15,22,.98))!important;
+  border:1px solid rgba(255,255,255,.10)!important;
+  border-radius:18px!important;
+  box-shadow:0 26px 80px rgba(0,0,0,.58), inset 0 1px 0 rgba(255,255,255,.06)!important;
+  animation:popPanel .22s cubic-bezier(.2,.8,.2,1) both;
+}
+.feedback-panel h2,.feedback-box h2,.update-panel h2{
+  background:linear-gradient(135deg,#fff,#c4b5fd,#7dd3fc);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.feedback-panel input,.feedback-panel select,.feedback-panel textarea,
+.feedback-box input,.feedback-box select,.feedback-box textarea{
+  background:rgba(255,255,255,.045)!important;
+  border-color:rgba(255,255,255,.09)!important;
+  transition:border-color .18s, box-shadow .18s, background .18s;
+}
+.feedback-panel input:focus,.feedback-panel select:focus,.feedback-panel textarea:focus,
+.feedback-box input:focus,.feedback-box select:focus,.feedback-box textarea:focus{
+  border-color:rgba(167,139,250,.45)!important;
+  box-shadow:0 0 0 3px rgba(167,139,250,.12);
+  background:rgba(255,255,255,.065)!important;
+}
+.feedback-send,.update-close{
+  transition:transform .16s, box-shadow .16s, border-color .16s;
+}
+.feedback-send:hover,.update-close:hover{
+  transform:translateY(-1px);
+  box-shadow:0 10px 28px rgba(167,139,250,.16);
+}
+.update-item{
+  border-color:rgba(255,255,255,.07)!important;
+  background:rgba(255,255,255,.035)!important;
+  border-radius:10px!important;
+}
+.update-subitem{
+  color:#b9c4d6!important;
+}
+.pane.on .ac,
+.pane.on .extra-card,
+.pane.on .extra-row,
+.pane.on .drop-card,
+.pane.on .modifier-card,
+.pane.on .lc,
+.pane.on .tb,
+.pane.on .lg,
+.pane.on .lv-bar{
+  animation:cardIn .36s cubic-bezier(.2,.8,.2,1) both;
+}
+.pane.on .ac:nth-child(1),.pane.on .extra-card:nth-child(1),.pane.on .drop-card:nth-child(1),.pane.on .modifier-card:nth-child(1){animation-delay:.02s}
+.pane.on .ac:nth-child(2),.pane.on .extra-card:nth-child(2),.pane.on .drop-card:nth-child(2),.pane.on .modifier-card:nth-child(2){animation-delay:.05s}
+.pane.on .ac:nth-child(3),.pane.on .extra-card:nth-child(3),.pane.on .drop-card:nth-child(3),.pane.on .modifier-card:nth-child(3){animation-delay:.08s}
+.pane.on .ac:nth-child(4),.pane.on .extra-card:nth-child(4),.pane.on .drop-card:nth-child(4),.pane.on .modifier-card:nth-child(4){animation-delay:.11s}
+.pane.on .ac:nth-child(5),.pane.on .extra-card:nth-child(5),.pane.on .drop-card:nth-child(5),.pane.on .modifier-card:nth-child(5){animation-delay:.14s}
+.pane.on .ac:nth-child(n+6),.pane.on .extra-card:nth-child(n+6),.pane.on .drop-card:nth-child(n+6),.pane.on .modifier-card:nth-child(n+6){animation-delay:.17s}
+.nav-tab,.flt-btn,.sub-btn,.mini-tab,.feedback-button,.update-button{
+  transition:transform .16s ease, background .16s ease, border-color .16s ease, color .16s ease, box-shadow .16s ease;
+}
+.nav-tab:hover,.flt-btn:hover,.sub-btn:hover,.mini-tab:hover,.feedback-button:hover,.update-button:hover{
+  transform:translateY(-1px);
+}
+.pane{
+  animation:paneFade .2s ease both;
+}
+@keyframes cardIn{
+  from{opacity:0;transform:translateY(10px) scale(.985)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes paneFade{
+  from{opacity:.45}
+  to{opacity:1}
+}
+@keyframes fadeLayer{
+  from{opacity:0}
+  to{opacity:1}
+}
+@keyframes popPanel{
+  from{opacity:0;transform:translateY(12px) scale(.96)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+.ac,.extra-card,.extra-row,.drop-card,.lac,.lc,.modifier-card,.lg,.lv-bar,.tb{
+  position:relative;
+  border:1px solid transparent!important;
+  background:
+    linear-gradient(180deg,rgba(15,20,30,.96),rgba(10,13,20,.96)) padding-box,
+    linear-gradient(135deg,rgba(255,138,138,.60),rgba(167,139,250,.38),rgba(56,189,248,.34)) border-box!important;
+  box-shadow:0 14px 36px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.04)!important;
+}
+.ac::before,.extra-card::before,.drop-card::before,.modifier-card::before{
+  display:none!important;
+}
+.ac:hover,.extra-card:hover,.extra-row:hover,.drop-card:hover,.modifier-card:hover{
+  background:
+    linear-gradient(180deg,rgba(18,24,36,.98),rgba(12,16,24,.98)) padding-box,
+    linear-gradient(135deg,rgba(255,138,138,.80),rgba(167,139,250,.55),rgba(56,189,248,.50)) border-box!important;
+  box-shadow:0 18px 46px rgba(0,0,0,.32),0 0 28px rgba(167,139,250,.08)!important;
+}
+.modifier-desc:empty{
+  display:none;
+}
+.feedback-panel select,
+.feedback-box select{
+  color:#fff!important;
+  background:#181d2a!important;
+  border-color:rgba(255,255,255,.12)!important;
+  appearance:auto!important;
+  -webkit-appearance:menulist!important;
+}
+.feedback-panel select option,
+.feedback-box select option{
+  background:#151a25!important;
+  color:#fff!important;
+}
+.feedback-panel select:focus,
+.feedback-box select:focus{
+  color:#fff!important;
+  background:#181d2a!important;
+}
+.hd h1{
+  font-size:clamp(24px,3.8vw,46px)!important;
+  letter-spacing:.08em!important;
+}
+.hd p{
+  max-width:760px;
+  margin:0 auto;
+  line-height:1.45;
+  text-transform:none!important;
+  letter-spacing:.05em!important;
+  font-size:13px!important;
+}
+
+
+.feedback-panel select,
+.feedback-box select,
+#feedbackCategory,
+#feedbackPriority,
+#fbCategory,
+#fbPriority{
+  color:#ffffff!important;
+  background-color:#1a2030!important;
+  border:1px solid rgba(167,139,250,.42)!important;
+  color-scheme:dark!important;
+  accent-color:#a78bfa!important;
+}
+.feedback-panel select option,
+.feedback-box select option,
+#feedbackCategory option,
+#feedbackPriority option,
+#fbCategory option,
+#fbPriority option{
+  color:#ffffff!important;
+  background-color:#111827!important;
+}
+.feedback-panel select option:checked,
+.feedback-box select option:checked,
+#feedbackCategory option:checked,
+#feedbackPriority option:checked,
+#fbCategory option:checked,
+#fbPriority option:checked{
+  color:#ffffff!important;
+  background-color:#7c3aed!important;
+}
+.pane.on{
+  animation:none!important;
+}
+.reveal-item{
+  animation:softReveal .34s cubic-bezier(.2,.75,.22,1) both!important;
+}
+@keyframes softReveal{
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+.nav-tab.on{
+  animation:tabPulse .18s ease both;
+}
+@keyframes tabPulse{
+  from{transform:translateY(1px)}
+  to{transform:translateY(0)}
+}
+
+
+.nav-tab-disabled{
+  opacity:.55;
+  cursor:not-allowed!important;
+  position:relative;
+}
+.nav-tab-disabled:hover{
+  color:var(--mu)!important;
+  transform:none!important;
+  background:transparent!important;
+}
+.nav-tab-disabled::after{
+  content:'Coming soon';
+  position:absolute;
+  left:50%;
+  bottom:-34px;
+  transform:translateX(-50%) translateY(4px);
+  opacity:0;
+  pointer-events:none;
+  white-space:nowrap;
+  padding:6px 9px;
+  border-radius:8px;
+  background:rgba(10,13,20,.96);
+  border:1px solid rgba(255,255,255,.14);
+  color:#facc15;
+  font-family:var(--ft);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.06em;
+  z-index:20;
+  transition:opacity .16s ease, transform .16s ease;
+}
+.nav-tab-disabled:hover::after{
+  opacity:1;
+  transform:translateX(-50%) translateY(0);
+}
+
 </style>
 </head>
 <body>
 <div id="root">
-  <div class="hd"><h1>LOADOUTS</h1><p>Relics · Weapons · Accessories · Loadouts</p></div>
-  <div class="nav" id="main-nav">
-    <button class="nav-tab on" data-tab="relics">Relics</button>
-    <button class="nav-tab" data-tab="weapons">Weapons</button>
-    <button class="nav-tab" data-tab="accessories">Accessories</button>
-    <button class="nav-tab" data-tab="loadouts">Loadouts</button>
-  </div>
-  <div id="pane-relics" class="pane on"></div>
-  <div id="pane-weapons" class="pane"></div>
-  <div id="pane-accessories" class="pane"></div>
-  <div id="pane-loadouts" class="pane"></div>
-
-  <footer class="footer-credit">Made by <span class="made-zenoir">Zenoir</span> &amp; <span class="made-novaz">NovaZ</span></footer>
+<div class="hd"><h1>ANIME WARRIORS 3 - WIKI</h1><p>On this website you can check tons of informations about everything in the game, feedbacks are appreciated</p><div class="feedback-top"><button class="feedback-button" id="feedbackButton" type="button">Feedback</button>
+<button class="update-button" id="updateButton" type="button">Update Log</button></div></div>
+<div class="nav" id="main-nav">
+<button class="nav-tab on" data-tab="relics">Relics</button>
+<button class="nav-tab" data-tab="weapons">Weapons</button>
+<button class="nav-tab" data-tab="accessories">Accessories</button>
+<button class="nav-tab" data-tab="loadouts">Loadouts</button>
+<button class="nav-tab" data-tab="s-warriors">S. Warriors</button>
+<button class="nav-tab" data-tab="g-modifiers">G. Modifiers</button>
+<button class="nav-tab" data-tab="drops">Drops</button>
+<button class="nav-tab nav-tab-disabled" data-tab="build-team" title="Coming soon">Build A Team</button>
+</div>
+<div id="pane-relics" class="pane on"></div>
+<div id="pane-weapons" class="pane"></div>
+<div id="pane-accessories" class="pane"></div>
+<div id="pane-loadouts" class="pane"></div>
+<div id="pane-s-warriors" class="pane"></div>
+<div id="pane-g-modifiers" class="pane"></div>
+<div id="pane-drops" class="pane"></div>
+<footer class="footer-credit">Made by <span class="made-zenoir">Zenoir</span> &amp; <span class="made-novaz">NovaZ</span></footer>
 </div>
 <script>
-const DATA={"relics":[{"name":"Stone of Order","rarity":"epic","affiliations":["physical"],"description":"A perfectly smooth stone that radiates a calming aura of balance.","stats":{"critChance":10,"critDamage":20,"ultGain":15}},{"name":"Golden Dew","rarity":"legendary","affiliations":["magic"],"description":"A rare droplet of liquid light harvested from the blossoms of a celestial tree.","stats":{"luck":15,"xpGain":15,"ultEffectiveness":20}},{"name":"King's Amulet","rarity":"mythical","affiliations":["physical"],"description":"An ancient heirloom passed down through generations of legendary rulers.","stats":{"damage":40,"attackSpeed":15,"walkSpeed":20}},{"name":"Gem of Greed (Weak)","rarity":"rare","affiliations":["magic"],"description":"A small, cloudy jewel that slightly increases your fortune.","stats":{"cash":10}},{"name":"Gem of Greed (Polished)","rarity":"epic","affiliations":["magic"],"description":"A shimmering gem that seems to attract wealth to its owner.","stats":{"cash":20,"drops":5}},{"name":"Gem of Greed (Grand)","rarity":"legendary","affiliations":["magic"],"description":"A brilliant, multi-faceted jewel that grants immense prosperity.","stats":{"cash":30,"drops":10}},{"name":"Gem of Protection (Weak)","rarity":"rare","affiliations":["physical"],"description":"A sturdy crystal that provides a faint sense of security.","stats":{"health":10}},{"name":"Gem of Protection (Polished)","rarity":"epic","affiliations":["physical"],"description":"A refined gem that forms a visible shimmering barrier around its wielder.","stats":{"health":15,"defense":5}},{"name":"Gem of Protection (Grand)","rarity":"legendary","affiliations":["physical"],"description":"An indestructible crystal that grants legendary resilience in battle.","stats":{"health":25,"defense":10}},{"name":"Gem of Power (Weak)","rarity":"rare","affiliations":["physical"],"description":"A pulsing red stone that surges with a small amount of raw energy.","stats":{"damage":10}},{"name":"Gem of Power (Polished)","rarity":"epic","affiliations":["physical"],"description":"A refined stone that significantly enhances the wielder's striking power.","stats":{"damage":20,"attackSpeed":5}},{"name":"Gem of Power (Grand)","rarity":"legendary","affiliations":["physical"],"description":"A magnificent jewel that unleashes the full potential of its owner's strength.","stats":{"damage":30,"attackSpeed":10}}],"accessories":[{"name":"Leather Chestplate","type":"outfit","rarity":"common","stats":{"health":5}},{"name":"Leather Helmet","type":"head","rarity":"common","stats":{"walkSpeed":5}},{"name":"Ripped Cape","type":"waist","rarity":"common","stats":{"cash":10}},{"name":"Scouter","type":"head","rarity":"common","stats":{"damage":5}},{"name":"17's Bandana","type":"head","rarity":"common","stats":{"drops":10}},{"name":"Iron Chestplate","type":"outfit","rarity":"rare","stats":{"health":10}},{"name":"Freeze Force Uniform","type":"outfit","rarity":"rare","stats":{"defense":10,"ultCost":5}},{"name":"Pickle's Cape","type":"waist","rarity":"rare","stats":{"cash":20,"luck":15}},{"name":"Red Ribbon Hat","type":"head","rarity":"rare","stats":{"ultGain":10}},{"name":"Ninja Headband","type":"head","rarity":"rare","stats":{"walkSpeed":10,"luck":20}},{"name":"Jonin Vest","type":"outfit","rarity":"rare","stats":{"health":15}},{"name":"Fox Mask","type":"head","rarity":"rare","stats":{"walkSpeed":15,"dodgeChance":5,"attackSpeed":5}},{"name":"Ninja Headband (Crossed)","type":"head","rarity":"rare","stats":{"damage":10,"xpGain":10}},{"name":"Robin's Hat","type":"head","rarity":"rare","stats":{"damage":10,"ultEffectiveness":10}},{"name":"Sky Wings","type":"waist","rarity":"rare","stats":{"walkSpeed":15,"dodgeChance":7.5}},{"name":"Deer Hat","type":"head","rarity":"rare","stats":{"health":12.5,"luck":15}},{"name":"Carrots Outfit (Worned)","type":"outfit","rarity":"epic","stats":{"attackSpeed":10,"ultGain":10,"ultEffectiveness":10,"damage":15}},{"name":"Plasma's Cape","type":"waist","rarity":"epic","stats":{"drops":35,"cash":25}},{"name":"Gurra's Gourd","type":"waist","rarity":"epic","stats":{"health":15,"defense":10}},{"name":"Orange Vest","type":"outfit","rarity":"epic","stats":{"damage":15,"attackSpeed":12.5,"ultGain":10}},{"name":"Gohun II's Outfit","type":"outfit","rarity":"legendary","stats":{"critDamage":10,"critChance":5,"luck":25}},{"name":"Orochi's Obi","type":"waist","rarity":"legendary","stats":{"drops":50,"luck":30}},{"name":"U. Gohun's Outfit","type":"outfit","rarity":"legendary","stats":{"critDamage":25,"critChance":10,"ultCost":20,"attackSpeed":15}},{"name":"Thunder Drums","type":"waist","rarity":"legendary","stats":{"damage":15,"ultGain":15,"ultEffectiveness":20}},{"name":"Dawn Cloak","type":"outfit","rarity":"mythical","stats":{"dodgeChance":10,"attackSpeed":25,"ultGain":15,"ultCost":15,"ultCooldown":15,"ultEffectiveness":15}},{"name":"Desert Warlord Coat","type":"waist","rarity":"mythical","stats":{"damage":20,"critDamage":20,"enemyBossDamage":15}},{"name":"Freeze's Helmet","type":"head","rarity":"mythical","stats":{"ultCost":25,"ultEffectiveness":20,"damage":15}},{"name":"Super Cel's Wings","type":"waist","rarity":"mythical","stats":{"walkSpeed":30,"luck":40,"drops":60}},{"name":"Hebi","type":"waist","rarity":"mythical","stats":{"damage":20,"critDamage":20,"critChance":15}},{"name":"Binding Loop","type":"head","rarity":"exclusive","stats":{}},{"name":"VIP Crown","type":"head","rarity":"exclusive","stats":{"xpGain":15,"luck":15}}],"weapons":[{"name":"Punch","displayName":"Punch","rarity":"common","description":"A basic weapon for any starting warrior.","stats":{"damage":1.1},"hasUlt":false,"hasTransform":false,"tags":["unarmed"]},{"name":"Dagger","displayName":"Dagger","rarity":"common","description":"A small, quick blade for fast strikes.","stats":{"damage":1.225},"hasUlt":false,"hasTransform":false,"tags":["blade"]},{"name":"Claymore","displayName":"Claymore","rarity":"common","description":"A heavy, two-handed sword with great reach.","stats":{"damage":1.25},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Katana","displayName":"Katana","rarity":"common","description":"A sharp, curved blade from the east.","stats":{"damage":1.3},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Raygun","displayName":"Raygun","rarity":"common","description":"A futuristic firearm that fires concentrated energy bolts.","stats":{"damage":1.5},"hasUlt":false,"hasTransform":false,"tags":["gun"]},{"name":"Kunai","displayName":"Kunai","rarity":"common","description":"A versatile throwing knife commonly used by shinobi.","stats":{"damage":1.8},"hasUlt":false,"hasTransform":false,"tags":["blade"]},{"name":"Anbu Blade","displayName":"Anbu Blade","rarity":"common","description":"A straight-edged sword carried by elite covert ninja.","stats":{"damage":1.8},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Power Pole","displayName":"Power Pole","rarity":"rare","description":"A mystical staff that can extend to incredible lengths.","stats":{"damage":2.2},"hasUlt":false,"hasTransform":false,"tags":["staff"]},{"name":"Trunkos Sword","displayName":"Trunko's Sword","rarity":"rare","description":"A sharp blade carried by a warrior from a ruined future.","stats":{"damage":2.2},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Plasma Blaster","displayName":"Plasma Blaster","rarity":"rare","description":"A high-tech blaster that fires superheated plasma.","stats":{"damage":3},"hasUlt":false,"hasTransform":false,"tags":["gun"]},{"name":"Adamantine Staff","displayName":"Adamantine Staff","rarity":"rare","description":"A staff as hard as diamond, capable of shattering any defense.","stats":{"damage":3.5},"hasUlt":false,"hasTransform":false,"tags":["staff"]},{"name":"Cutlass","displayName":"Cutlass","rarity":"rare","description":"A reliable seafarer's blade built for quick close-range cuts.","stats":{"damage":4.75},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Z Sword","displayName":"Z Sword","rarity":"epic","description":"A legendary heavy sword said to contain an ancient power.","stats":{"damage":4},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Iron Cloud","displayName":"Iron Cloud","rarity":"epic","description":"A hardened sky blade forged from condensed clouds.","stats":{"damage":6},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Kitetsu","displayName":"Kitetsu","rarity":"epic","description":"A cursed blade with vicious cutting power and a dangerous edge.","stats":{"damage":6.6},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Burn Bazooka","displayName":"Burn Bazooka","rarity":"epic","description":"A heavy bazooka that launches scorching blasts into clustered enemies.","stats":{"damage":6.8},"hasUlt":false,"hasTransform":false,"tags":["gun"]},{"name":"Clan Tanto","displayName":"Clan Tanto","rarity":"epic","description":"A short sword passed down through a prestigious ninja bloodline.","stats":{"damage":5},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Heat Lance","displayName":"Heat Lance","rarity":"legendary","description":"A blazing lance that pierces armor with concentrated heat.","stats":{"damage":7.75},"hasUlt":false,"hasTransform":false,"tags":["lance"]},{"name":"Freeze Style","displayName":"Freeze Style","rarity":"legendary","description":"A fighting style that utilizes the brutal efficiency of a galactic tyrant.","stats":{"damage":4.2},"hasUlt":true,"hasTransform":false,"tags":["style"],"ult":{"displayName":"Planet Destroyer","description":"Unleash a devastating energy sphere that obliterates everything in its path.","cooldown":40,"dmgMulti":20}},{"name":"Cursed Sword","displayName":"Cursed Sword","rarity":"exclusive","description":"A powerful blade that brings misfortune to its wielder, unless they are truly chosen.","stats":{"damage":3},"hasUlt":true,"hasTransform":false,"tags":["sword","exclusive"],"ult":{"displayName":"Hero Slash","description":"Slash your enemies with a devastating energy blade that pierces through all enemies.","cooldown":40,"dmgMulti":20}},{"name":"Ultimate Gohun Style","displayName":"Ultimate Gohun Style","rarity":"mythical","description":"Build energy with each strike to unleash your ultimate transformation. +Damage +Attack Speed.","stats":{"damage":7},"hasUlt":true,"hasTransform":true,"tags":["style"],"ult":{"displayName":"Special Beast Cannon","description":"Channel your inner beast to fire a devastating energy beam that pierces through all enemies.","cooldown":40,"dmgMulti":20},"transform":{"charge":4,"required":100,"duration":20,"buffs":{"damage":30,"attackSpeed":25}}},{"name":"Sosoke Style","displayName":"Sosoke Style","rarity":"mythical","description":"A lethal sword style combined with the power of lightning.","stats":{"damage":9},"hasUlt":true,"hasTransform":false,"tags":["style","sword"],"ult":{"displayName":"Kirin","description":"Channel lightning from the heavens to strike down your enemies with a devastating thunderbolt.","cooldown":40,"dmgMulti":20}},{"name":"Thunder God Staff","displayName":"Thunder God Staff","rarity":"mythical","description":"A storm-forged staff crackling with enough power to punish entire battlefields.","stats":{"damage":9.75},"hasUlt":true,"hasTransform":false,"tags":["staff"],"ult":{"displayName":"Amaru / Raigo","description":"Transform into lightning (Amaru) or summon divine thunder (Raigo — requires Thunder Drums accessory).","cooldown":40,"dmgMulti":20,"extra":"Raigo: 60s CD · 220× DMG · requires Thunder Drums"}},{"name":"Golden Hook Style","displayName":"Golden Hook Style","rarity":"mythical","description":"A ruthless desert fighting style that tears through enemies.","stats":{"damage":10.75,"ultGain":1.1},"hasUlt":true,"hasTransform":false,"tags":["style"],"ult":{"displayName":"Sables","description":"Release a fast-moving sand tornado that rips through everything in its path.","cooldown":40,"dmgMulti":20},"specials":[{"name":"Sand Tithe","description":"Each hit reaps +10% BONUS ultimate charge."}]}],"statMeta":{"damage":{"label":"DMG","color":"#ff5e5e","p":"+","s":"%"},"critDamage":{"label":"Crit DMG","color":"#ff9f43","p":"+","s":"%"},"critChance":{"label":"Crit %","color":"#ffd32a","p":"+","s":"%"},"attackSpeed":{"label":"ATK SPD","color":"#ff6b9d","p":"+","s":"%"},"ultEffectiveness":{"label":"ULT DMG","color":"#a78bfa","p":"+","s":"%"},"ultGain":{"label":"ULT Charge","color":"#818cf8","p":"+","s":"%"},"ultCost":{"label":"ULT Cost","color":"#34d399","p":"-","s":"%"},"ultCooldown":{"label":"ULT CD","color":"#2dd4bf","p":"-","s":"%"},"dodgeChance":{"label":"Dodge","color":"#38bdf8","p":"+","s":"%"},"enemyBossDamage":{"label":"Boss DMG","color":"#fb923c","p":"+","s":"%"},"health":{"label":"HP","color":"#4ade80","p":"+","s":"%"},"defense":{"label":"DEF","color":"#22d3ee","p":"+","s":"%"},"walkSpeed":{"label":"Walk SPD","color":"#67e8f9","p":"+","s":"%"},"luck":{"label":"Luck","color":"#facc15","p":"+","s":"%"},"drops":{"label":"Drops","color":"#c084fc","p":"+","s":"%"},"cash":{"label":"Cash","color":"#86efac","p":"+","s":"%"},"xpGain":{"label":"EXP","color":"#6ee7b7","p":"+","s":"%"}}};
+const DATA={"relics":[{"name":"Stone of Order","rarity":"epic","affiliations":["physical"],"description":"A perfectly smooth stone that radiates a calming aura of balance.","stats":{"critChance":10,"critDamage":20,"ultGain":15}},{"name":"Golden Dew","rarity":"legendary","affiliations":["magic"],"description":"A rare droplet of liquid light harvested from the blossoms of a celestial tree.","stats":{"luck":15,"xpGain":15,"ultEffectiveness":20}},{"name":"King's Amulet","rarity":"mythical","affiliations":["physical"],"description":"An ancient heirloom passed down through generations of legendary rulers.","stats":{"damage":40,"attackSpeed":15,"walkSpeed":20}},{"name":"Gem of Greed (Weak)","rarity":"rare","affiliations":["magic"],"description":"A small, cloudy jewel that slightly increases your fortune.","stats":{"cash":10}},{"name":"Gem of Greed (Polished)","rarity":"epic","affiliations":["magic"],"description":"A shimmering gem that seems to attract wealth to its owner.","stats":{"cash":20,"drops":5}},{"name":"Gem of Greed (Grand)","rarity":"legendary","affiliations":["magic"],"description":"A brilliant, multi-faceted jewel that grants immense prosperity.","stats":{"cash":30,"drops":10}},{"name":"Gem of Protection (Weak)","rarity":"rare","affiliations":["physical"],"description":"A sturdy crystal that provides a faint sense of security.","stats":{"health":10}},{"name":"Gem of Protection (Polished)","rarity":"epic","affiliations":["physical"],"description":"A refined gem that forms a visible shimmering barrier around its wielder.","stats":{"health":15,"defense":5}},{"name":"Gem of Protection (Grand)","rarity":"legendary","affiliations":["physical"],"description":"An indestructible crystal that grants legendary resilience in battle.","stats":{"health":25,"defense":10}},{"name":"Gem of Power (Weak)","rarity":"rare","affiliations":["physical"],"description":"A pulsing red stone that surges with a small amount of raw energy.","stats":{"damage":10}},{"name":"Gem of Power (Polished)","rarity":"epic","affiliations":["physical"],"description":"A refined stone that significantly enhances the wielder's striking power.","stats":{"damage":20,"attackSpeed":5}},{"name":"Gem of Power (Grand)","rarity":"legendary","affiliations":["physical"],"description":"A magnificent jewel that unleashes the full potential of its owner's strength.","stats":{"damage":30,"attackSpeed":10}}],"accessories":[{"name":"Leather Chestplate","type":"outfit","rarity":"common","stats":{"health":5}},{"name":"Leather Helmet","type":"head","rarity":"common","stats":{"walkSpeed":5}},{"name":"Ripped Cape","type":"waist","rarity":"common","stats":{"cash":10}},{"name":"Scouter","type":"head","rarity":"common","stats":{"damage":5}},{"name":"17's Bandana","type":"head","rarity":"common","stats":{"drops":10}},{"name":"Iron Chestplate","type":"outfit","rarity":"rare","stats":{"health":10}},{"name":"Freeze Force Uniform","type":"outfit","rarity":"rare","stats":{"defense":10,"ultCost":5}},{"name":"Pickle's Cape","type":"waist","rarity":"rare","stats":{"cash":20,"luck":15}},{"name":"Red Ribbon Hat","type":"head","rarity":"rare","stats":{"ultGain":10}},{"name":"Ninja Headband","type":"head","rarity":"rare","stats":{"walkSpeed":10,"luck":20}},{"name":"Jonin Vest","type":"outfit","rarity":"rare","stats":{"health":15}},{"name":"Fox Mask","type":"head","rarity":"rare","stats":{"walkSpeed":15,"dodgeChance":5,"attackSpeed":5}},{"name":"Ninja Headband (Crossed)","type":"head","rarity":"rare","stats":{"damage":10,"xpGain":10}},{"name":"Robin's Hat","type":"head","rarity":"rare","stats":{"damage":10,"ultEffectiveness":10}},{"name":"Sky Wings","type":"waist","rarity":"rare","stats":{"walkSpeed":15,"dodgeChance":7.5}},{"name":"Deer Hat","type":"head","rarity":"rare","stats":{"health":12.5,"luck":25}},{"name":"Carrots Outfit (Worned)","type":"outfit","rarity":"epic","stats":{"attackSpeed":10,"ultGain":10,"ultEffectiveness":10,"damage":15}},{"name":"Plasma's Cape","type":"waist","rarity":"epic","stats":{"drops":35,"cash":25}},{"name":"Gurra's Gourd","type":"waist","rarity":"epic","stats":{"health":15,"defense":10}},{"name":"Orange Vest","type":"outfit","rarity":"epic","stats":{"damage":15,"attackSpeed":12.5,"ultGain":10}},{"name":"Gohun II's Outfit","type":"outfit","rarity":"legendary","stats":{"critDamage":10,"critChance":5,"luck":25}},{"name":"Orochi's Obi","type":"waist","rarity":"legendary","stats":{"drops":50,"luck":30}},{"name":"U. Gohun's Outfit","type":"outfit","rarity":"legendary","stats":{"critDamage":25,"critChance":10,"ultCost":20,"attackSpeed":15}},{"name":"Thunder Drums","type":"waist","rarity":"legendary","stats":{"damage":15,"ultGain":15,"ultEffectiveness":20}},{"name":"Dawn Cloak","type":"outfit","rarity":"mythical","stats":{"dodgeChance":10,"attackSpeed":25,"ultGain":15,"ultCost":15,"ultCooldown":15,"ultEffectiveness":15}},{"name":"Desert Warlord Coat","type":"waist","rarity":"mythical","stats":{"damage":20,"critDamage":20,"enemyBossDamage":15}},{"name":"Freeze's Helmet","type":"head","rarity":"mythical","stats":{"ultCost":25,"ultEffectiveness":20,"damage":15}},{"name":"Super Cel's Wings","type":"waist","rarity":"mythical","stats":{"walkSpeed":30,"luck":40,"drops":60}},{"name":"Hebi","type":"waist","rarity":"mythical","stats":{"damage":20,"critDamage":20,"critChance":15}},{"name":"Binding Loop","type":"head","rarity":"exclusive","stats":{}},{"name":"VIP Crown","type":"head","rarity":"exclusive","stats":{"xpGain":15,"luck":15}}],"weapons":[{"name":"Punch","displayName":"Punch","rarity":"common","description":"A basic weapon for any starting warrior.","stats":{"damage":1.1},"hasUlt":false,"hasTransform":false,"tags":["unarmed"]},{"name":"Dagger","displayName":"Dagger","rarity":"common","description":"A small, quick blade for fast strikes.","stats":{"damage":1.225},"hasUlt":false,"hasTransform":false,"tags":["blade"]},{"name":"Claymore","displayName":"Claymore","rarity":"common","description":"A heavy, two-handed sword with great reach.","stats":{"damage":1.25},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Katana","displayName":"Katana","rarity":"common","description":"A sharp, curved blade from the east.","stats":{"damage":1.3},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Raygun","displayName":"Raygun","rarity":"common","description":"A futuristic firearm that fires concentrated energy bolts.","stats":{"damage":1.5},"hasUlt":false,"hasTransform":false,"tags":["gun"]},{"name":"Kunai","displayName":"Kunai","rarity":"common","description":"A versatile throwing knife commonly used by shinobi.","stats":{"damage":1.8},"hasUlt":false,"hasTransform":false,"tags":["blade"]},{"name":"Anbu Blade","displayName":"Anbu Blade","rarity":"common","description":"A straight-edged sword carried by elite covert ninja.","stats":{"damage":1.8},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Power Pole","displayName":"Power Pole","rarity":"rare","description":"A mystical staff that can extend to incredible lengths.","stats":{"damage":2.2},"hasUlt":false,"hasTransform":false,"tags":["staff"]},{"name":"Trunkos Sword","displayName":"Trunko's Sword","rarity":"rare","description":"A sharp blade carried by a warrior from a ruined future.","stats":{"damage":2.2},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Plasma Blaster","displayName":"Plasma Blaster","rarity":"rare","description":"A high-tech blaster that fires superheated plasma.","stats":{"damage":3},"hasUlt":false,"hasTransform":false,"tags":["gun"]},{"name":"Adamantine Staff","displayName":"Adamantine Staff","rarity":"rare","description":"A staff as hard as diamond, capable of shattering any defense.","stats":{"damage":3.5},"hasUlt":false,"hasTransform":false,"tags":["staff"]},{"name":"Cutlass","displayName":"Cutlass","rarity":"rare","description":"A reliable seafarer's blade built for quick close-range cuts.","stats":{"damage":4.75},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Z Sword","displayName":"Z Sword","rarity":"epic","description":"A legendary heavy sword said to contain an ancient power.","stats":{"damage":4},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Iron Cloud","displayName":"Iron Cloud","rarity":"epic","description":"A hardened sky blade forged from condensed clouds.","stats":{"damage":6},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Kitetsu","displayName":"Kitetsu","rarity":"epic","description":"A cursed blade with vicious cutting power and a dangerous edge.","stats":{"damage":6.6},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Burn Bazooka","displayName":"Burn Bazooka","rarity":"epic","description":"A heavy bazooka that launches scorching blasts into clustered enemies.","stats":{"damage":6.8},"hasUlt":false,"hasTransform":false,"tags":["gun"]},{"name":"Clan Tanto","displayName":"Clan Tanto","rarity":"epic","description":"A short sword passed down through a prestigious ninja bloodline.","stats":{"damage":5},"hasUlt":false,"hasTransform":false,"tags":["sword"]},{"name":"Heat Lance","displayName":"Heat Lance","rarity":"legendary","description":"A blazing lance that pierces armor with concentrated heat.","stats":{"damage":7.75},"hasUlt":false,"hasTransform":false,"tags":["lance"]},{"name":"Freeze Style","displayName":"Freeze Style","rarity":"legendary","description":"A fighting style that utilizes the brutal efficiency of a galactic tyrant.","stats":{"damage":4.2},"hasUlt":true,"hasTransform":false,"tags":["style"],"ult":{"displayName":"Planet Destroyer","description":"Unleash a devastating energy sphere that obliterates everything in its path.","cooldown":40,"dmgMulti":20}},{"name":"Cursed Sword","displayName":"Cursed Sword","rarity":"exclusive","description":"A powerful blade that brings misfortune to its wielder, unless they are truly chosen.","stats":{"damage":3},"hasUlt":true,"hasTransform":false,"tags":["sword","exclusive"],"ult":{"displayName":"Hero Slash","description":"Slash your enemies with a devastating energy blade that pierces through all enemies.","cooldown":40,"dmgMulti":20}},{"name":"Ultimate Gohun Style","displayName":"Ultimate Gohun Style","rarity":"mythical","description":"Build energy with each strike to unleash your ultimate transformation. +Damage +Attack Speed.","stats":{"damage":7},"hasUlt":true,"hasTransform":true,"tags":["style"],"ult":{"displayName":"Special Beast Cannon","description":"Channel your inner beast to fire a devastating energy beam that pierces through all enemies.","cooldown":40,"dmgMulti":20},"transform":{"charge":4,"required":100,"duration":20,"buffs":{"damage":30,"attackSpeed":25}}},{"name":"Sosoke Style","displayName":"Sosoke Style","rarity":"mythical","description":"A lethal sword style combined with the power of lightning.","stats":{"damage":9},"hasUlt":true,"hasTransform":false,"tags":["style","sword"],"ult":{"displayName":"Kirin","description":"Channel lightning from the heavens to strike down your enemies with a devastating thunderbolt.","cooldown":40,"dmgMulti":20}},{"name":"Thunder God Staff","displayName":"Thunder God Staff","rarity":"mythical","description":"A storm-forged staff crackling with enough power to punish entire battlefields.","stats":{"damage":9.75},"hasUlt":true,"hasTransform":false,"tags":["staff"],"ult":{"displayName":"Amaru / Raigo","description":"Transform into lightning (Amaru) or summon divine thunder (Raigo — requires Thunder Drums accessory).","cooldown":40,"dmgMulti":20,"extra":"Raigo: 60s CD · 220× DMG · requires Thunder Drums"}},{"name":"Golden Hook Style","displayName":"Golden Hook Style","rarity":"mythical","description":"A ruthless desert fighting style that tears through enemies.","stats":{"damage":10.75,"ultGain":1.1},"hasUlt":true,"hasTransform":false,"tags":["style"],"ult":{"displayName":"Sables","description":"Release a fast-moving sand tornado that rips through everything in its path.","cooldown":40,"dmgMulti":20},"specials":[{"name":"Sand Tithe","description":"Each hit reaps +10% BONUS ultimate charge."}]}],"statMeta":{"damage":{"label":"DMG","color":"#ff5e5e","p":"+","s":"%"},"critDamage":{"label":"Crit DMG","color":"#ff9f43","p":"+","s":"%"},"critChance":{"label":"Crit %","color":"#ffd32a","p":"+","s":"%"},"attackSpeed":{"label":"ATK SPD","color":"#ff6b9d","p":"+","s":"%"},"ultEffectiveness":{"label":"ULT DMG","color":"#a78bfa","p":"+","s":"%"},"ultGain":{"label":"ULT Charge","color":"#818cf8","p":"+","s":"%"},"ultCost":{"label":"ULT Cost","color":"#34d399","p":"-","s":"%"},"ultCooldown":{"label":"ULT CD","color":"#2dd4bf","p":"-","s":"%"},"dodgeChance":{"label":"Dodge","color":"#38bdf8","p":"+","s":"%"},"enemyBossDamage":{"label":"Boss DMG","color":"#fb923c","p":"+","s":"%"},"health":{"label":"HP","color":"#4ade80","p":"+","s":"%"},"defense":{"label":"DEF","color":"#22d3ee","p":"+","s":"%"},"walkSpeed":{"label":"Walk SPD","color":"#67e8f9","p":"+","s":"%"},"luck":{"label":"Luck","color":"#facc15","p":"+","s":"%"},"drops":{"label":"Drops","color":"#c084fc","p":"+","s":"%"},"cash":{"label":"Cash","color":"#86efac","p":"+","s":"%"},"xpGain":{"label":"EXP","color":"#6ee7b7","p":"+","s":"%"}}};
 const STATE={relics:{lv:1,filter:'all'},weapons:{lv:1,filter:'all'},accessories:{lv:1,filter:'all'},loadouts:{lv:1,filter:'damage'}};
 const TIERS=[{id:'SS',label:'SS',desc:'Best items for DMG / CRIT / DROP / LUCK'},{id:'SP',label:'S+',desc:'Second best items in each category'},{id:'S',label:'S',desc:'Third best items in each category'},{id:'A',label:'A',desc:'Strong alternatives'},{id:'B',label:'B',desc:'Situational choices'},{id:'C',label:'C',desc:'Weak or niche items'}];
 const LOADOUTS=[
@@ -79,9 +763,452 @@ function itemMini(item,type,lv,keys){if(!item)return '<div class="lac"><div clas
 function pill(k,v,hi){const m=meta(k);return '<span class="sp" style="color:'+m.color+';border-color:'+m.color+(hi?'55':'22')+';background:'+m.color+(hi?'1a':'0a')+'"><span class="sp-dot" style="background:'+m.color+'"></span>'+m.label+' '+m.p+fmt(v)+m.s+'</span>'}
 function renderLoadouts(){const el=document.getElementById('pane-loadouts');el.innerHTML=loadoutControls();const l=LOADOUTS.find(x=>x.id===STATE.loadouts.filter)||LOADOUTS[0];const lv=STATE.loadouts.lv;const ac=meta(l.keys[0]).color;const outfit=pickTop(DATA.accessories,lv,'accessories',l.keys,1,'outfit')[0];const head=pickTop(DATA.accessories,lv,'accessories',l.keys,1,'head')[0];const waist=pickTop(DATA.accessories,lv,'accessories',l.keys,1,'waist')[0];const bestRelic=pickTop(DATA.relics,lv,'relics',l.keys,1)[0];const relics=bestRelic?[bestRelic]:[];const all=[outfit,head,waist,bestRelic].filter(Boolean);const totals={};all.forEach(item=>{const type=item.type?'accessories':'relics';for(const [k,v]of Object.entries(scaledStats(item,lv,type)))totals[k]=(totals[k]||0)+v});const box=document.getElementById('loadout-box');box.innerHTML='<div class="lc"><div class="lc-hd"><div class="lc-ico" style="background:'+ac+'18;border:1px solid '+ac+'33">'+l.icon+'</div><div class="lc-tw"><div class="lc-ttl" style="color:'+ac+'">'+l.label+'</div><div class="lc-sub">'+l.desc+'</div></div></div><div class="lc-bd"><div class="sg"><div class="sw"><div class="sl-lbl">Accessory - Outfit</div>'+itemMini(outfit,'accessories',lv,l.keys)+'</div><div class="sw"><div class="sl-lbl">Accessory - Head</div>'+itemMini(head,'accessories',lv,l.keys)+'</div><div class="sw"><div class="sl-lbl">Accessory - Waist</div>'+itemMini(waist,'accessories',lv,l.keys)+'</div><div class="sw"><div class="sl-lbl">Best Relic</div>'+itemMini(bestRelic,'relics',lv,l.keys)+'<div class="relic-note">You can use 14 relics at max</div></div></div><div class="ts"><div class="ts-ttl">Combined stats</div><div class="tp">'+Object.entries(totals).sort((a,b)=>(l.keys.indexOf(a[0])<0?99:l.keys.indexOf(a[0]))-(l.keys.indexOf(b[0])<0?99:l.keys.indexOf(b[0]))).map(([k,v])=>{const m=meta(k),hi=l.keys.includes(k);return '<span class="tpp" style="color:'+m.color+';border-color:'+m.color+(hi?'55':'22')+';background:'+m.color+(hi?'18':'0a')+'"><span class="tpp-dot" style="background:'+m.color+'"></span>'+m.label+' '+m.p+fmt(v)+m.s+'</span>'}).join('')+'</div></div></div></div>'}
 function renderAll(){renderRelics();renderWeapons();renderAccessories();renderLoadouts();bindDynamic()}
-function bindDynamic(){document.querySelectorAll('[data-lv]').forEach(sl=>{sl.oninput=e=>{const key=e.target.dataset.lv;STATE[key].lv=parseInt(e.target.value);const inp=document.querySelector('[data-lvinp="'+key+'"]');if(inp)inp.value=STATE[key].lv};sl.onchange=()=>renderAll();sl.onpointerup=()=>renderAll();sl.onkeyup=e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key))renderAll()}});document.querySelectorAll('[data-lvinp]').forEach(inp=>{inp.onblur=e=>{STATE[e.target.dataset.lvinp].lv=clamp(e.target.value);renderAll()};inp.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();e.target.blur()}}});document.querySelectorAll('[data-filter]').forEach(box=>box.onclick=e=>{const b=e.target.closest('.flt-btn,.sub-btn');if(!b)return;STATE[box.dataset.filter].filter=b.dataset.v;renderAll()})}
-document.getElementById('main-nav').addEventListener('click',e=>{const b=e.target.closest('.nav-tab');if(!b)return;document.querySelectorAll('.nav-tab').forEach(x=>x.classList.toggle('on',x===b));document.querySelectorAll('.pane').forEach(x=>x.classList.remove('on'));document.getElementById('pane-'+b.dataset.tab).classList.add('on')});
+function bindDynamic(){document.querySelectorAll('[data-lv]').forEach(sl=>{sl.oninput=e=>{const key=e.target.dataset.lv;STATE[key].lv=parseInt(e.target.value);const inp=document.querySelector('[data-lvinp="'+key+'"]');if(inp)inp.value=STATE[key].lv};sl.onchange=()=>renderAll();
+setTimeout(()=>animatePaneItems(document.querySelector('.pane.on')),50);sl.onpointerup=()=>renderAll();sl.onkeyup=e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key))renderAll()}});document.querySelectorAll('[data-lvinp]').forEach(inp=>{inp.onblur=e=>{STATE[e.target.dataset.lvinp].lv=clamp(e.target.value);renderAll()};inp.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();e.target.blur()}}});document.querySelectorAll('[data-filter]').forEach(box=>box.onclick=e=>{const b=e.target.closest('.flt-btn,.sub-btn');if(!b)return;STATE[box.dataset.filter].filter=b.dataset.v;renderAll()})}
+function animatePaneItems(pane){
+  const items = pane.querySelectorAll('.ac,.tb,.lg,.lv-bar,.flt,.subnav,.mini-tabs,.extra-card,.extra-row,.drop-card,.modifier-card,.lc,.info-note');
+  items.forEach((item,index)=>{
+    item.classList.remove('reveal-item');
+    item.style.animationDelay = '';
+    void item.offsetWidth;
+    item.style.animationDelay = Math.min(index * 35, 420) + 'ms';
+    item.classList.add('reveal-item');
+  });
+}
+document.getElementById('main-nav').addEventListener('click',e=>{
+  const b=e.target.closest('.nav-tab');
+  if(!b || b.classList.contains('nav-tab-disabled'))return;
+  document.querySelectorAll('.nav-tab').forEach(x=>x.classList.toggle('on',x===b));
+  document.querySelectorAll('.pane').forEach(x=>x.classList.remove('on'));
+  const pane=document.getElementById('pane-'+b.dataset.tab);
+  pane.classList.add('on');
+  animatePaneItems(pane);
+});
 renderAll();
 </script>
+<div class="update-layer" id="updateLayer">
+<div class="update-panel">
+<h2>Update Log</h2>
+<div class="update-version" id="updateVersionText">Version 1.0.0</div>
+<div class="update-list" id="updateList"></div>
+<button class="update-close" id="updateClose" type="button">Close</button>
+</div>
+</div>
+<div class="feedback-layer" id="feedbackLayer">
+<div class="feedback-panel">
+<h2>Feedback</h2>
+<div class="feedback-row">
+<div>
+<label for="feedbackCategory">Category</label>
+<select id="feedbackCategory">
+<option>Bug Report</option>
+<option>Missinfo</option>
+<option>Suggestion</option>
+</select>
+</div>
+<div>
+<label for="feedbackPriority">Priority</label>
+<select id="feedbackPriority">
+<option>High</option>
+<option selected>Medium</option>
+<option>Low</option>
+</select>
+</div>
+</div>
+<label for="feedbackTitle">Title</label>
+<input id="feedbackTitle" type="text" maxlength="90" placeholder="Short title">
+<label for="feedbackText">Message</label>
+<textarea id="feedbackText" maxlength="1200" placeholder="Write your feedback here"></textarea>
+<div class="feedback-actions">
+<button class="feedback-send" id="feedbackSend" type="button">Send</button>
+<button class="feedback-cancel" id="feedbackCancel" type="button">Close</button>
+</div>
+<div class="feedback-message" id="feedbackMessage"></div>
+</div>
+</div>
+<script>
+(function(){
+  var webhookUrl = "https://discord.com/api/webhooks/1499136757302694064/VhXFResF9kvZq6_5MQHj7C_srELShvBS7WltYL_H3tpViQ5zcJJtXxTIvuC80a1_dJUc";
+  var button = document.getElementById("feedbackButton");
+  var layer = document.getElementById("feedbackLayer");
+  var cancel = document.getElementById("feedbackCancel");
+  var send = document.getElementById("feedbackSend");
+  var status = document.getElementById("feedbackMessage");
+  if(!button || !layer || !cancel || !send) return;
+  button.onclick = function(){
+    layer.classList.add("open");
+    status.textContent = "";
+  };
+  cancel.onclick = function(){
+    layer.classList.remove("open");
+  };
+  layer.onclick = function(event){
+    if(event.target === layer) layer.classList.remove("open");
+  };
+  send.onclick = function(){
+    var category = document.getElementById("feedbackCategory").value;
+    var priority = document.getElementById("feedbackPriority").value;
+    var title = document.getElementById("feedbackTitle").value.trim();
+    var message = document.getElementById("feedbackText").value.trim();
+    if(!title || !message){
+      status.textContent = "Fill the title and message.";
+      return;
+    }
+    status.textContent = "Sending...";
+    var discordData = {
+      embeds: [{
+        title: title,
+        description: message,
+        color: 10980346,
+        fields: [
+          {name: "Category", value: category, inline: true},
+          {name: "Priority", value: priority, inline: true},
+          {name: "Page", value: location.href, inline: false}
+        ],
+        footer: {text: "LOADOUTS Feedback"},
+        timestamp: new Date().toISOString()
+      }]
+    };
+    var form = new FormData();
+    form.append("payload_json", JSON.stringify(discordData));
+    fetch(webhookUrl, {
+      method: "POST",
+      mode: "no-cors",
+      body: form
+    }).then(function(){
+      status.textContent = "Feedback sent!";
+      document.getElementById("feedbackTitle").value = "";
+      document.getElementById("feedbackText").value = "";
+      setTimeout(function(){
+        layer.classList.remove("open");
+        status.textContent = "";
+      }, 1000);
+    }).catch(function(){
+      status.textContent = "Could not send. Try again later.";
+    });
+  };
+})();
+</script>
+<script>
+(function(){
+  var updateVersion = "1.2";
+  var updateNotes = [
+    {
+      title: "Added Secret Warriors TAB",
+      details: [
+        "Broccoli, Vegeto, Minuto, and Dracul",
+        "Level scaling up to level 70",
+        "Special Descriptions"
+      ]
+    },
+    {
+      title: "Added Gauntlet Modifiers TAB",
+      details: [
+        "Damage modifiers",
+        "Drop modifiers",
+        "Luck modifiers"
+      ]
+    },
+    {
+      title: "Added Drops TAB",
+      details: [
+        "Check where every item is located"
+      ]
+    },
+    {
+      title: "UI Remake",
+      details: [
+        "Improved visual style and readability",
+        "Added more colors to everything",
+        "Reworked tab animations"
+      ]
+    }
+  ];
+  var button = document.getElementById("updateButton");
+  var layer = document.getElementById("updateLayer");
+  var close = document.getElementById("updateClose");
+  var versionText = document.getElementById("updateVersionText");
+  var list = document.getElementById("updateList");
+  if(!button || !layer || !close || !versionText || !list) return;
+  versionText.textContent = "Version " + updateVersion;
+  list.innerHTML = updateNotes.map(function(note){
+    var sub = "";
+    if(note.details && note.details.length){
+      sub = '<div class="update-sublist">' + note.details.map(function(detail){
+        return '<div class="update-subitem">- ' + detail + '</div>';
+      }).join("") + '</div>';
+    }
+    return '<div class="update-item"><div>' + note.title + '</div>' + sub + '</div>';
+  }).join("");
+  function openUpdateLog(){
+    layer.classList.add("open");
+  }
+  function closeUpdateLog(){
+    layer.classList.remove("open");
+    localStorage.setItem("loadoutsUpdateSeen", updateVersion);
+  }
+  button.onclick = openUpdateLog;
+  close.onclick = closeUpdateLog;
+  layer.onclick = function(event){
+    if(event.target === layer) closeUpdateLog();
+  };
+  if(localStorage.getItem("loadoutsUpdateSeen") !== updateVersion){
+    setTimeout(openUpdateLog, 350);
+  }
+})();
+</script>
+
+<script>
+(function(){
+  const superWarriors = [{"name": "Broccoli", "base": 330, "special": "Legendary Super Seiyan", "desc": "Gets stronger during battle and can enter a transformed state that greatly increases his power and survivability."}, {"name": "Vegeto", "base": 410, "special": "No More Games", "desc": "Gains increased damage and attack speed when his health gets low."}, {"name": "Minuto", "base": 500, "special": "Flying Raijin", "desc": "Gradually gains dodge chance and attack speed while fighting."}, {"name": "Dracul", "base": 600, "special": "World's Greatest Swordsman", "desc": "Critical attacks deal significantly more damage and his abilities can sometimes recover faster."}];
+  const gauntletModifiers = {"damage": [{"name": "Battle Momentum", "lines": ["+5% Attack Speed"], "desc": "Attack speed grows as floors are cleared. Resets on warrior death and caps at +30%."}, {"name": "Reinforcements", "lines": ["+20% Health", "-10% Walk Speed"], "desc": "More survivability at the cost of movement speed."}, {"name": "Boss Killer I", "lines": ["+10% Boss Damage"], "desc": "Improves damage against bosses."}, {"name": "Boss Killer II", "lines": ["+25% Boss Damage"], "desc": "Improves damage against bosses."}, {"name": "Boss Killer III", "lines": ["+40% Boss Damage"], "desc": "Improves damage against bosses."}, {"name": "Warrior Blessing I", "lines": ["+10% Damage"], "desc": "Damage boost for warriors."}, {"name": "Warrior Blessing II", "lines": ["+20% Damage"], "desc": "Damage boost for warriors."}, {"name": "Warrior Blessing III", "lines": ["+30% Damage"], "desc": "Damage boost for warriors."}, {"name": "Glass Cannon", "lines": ["+50% Damage", "-50% Defense"], "desc": "Very strong offense with a major defense penalty."}, {"name": "Endless Horde", "lines": ["++Enemies per Floor", "+1 Extra Card"], "desc": "More enemies appear, but you get more card choices."}, {"name": "Sacrificial Offering", "lines": ["+40% Damage", "+10% Attack Speed"], "desc": "Removes one random unit from each participant, then buffs the remaining units."}, {"name": "Kingslayer", "lines": ["+100% Boss Damage"], "desc": "Legendary card focused on boss damage."}, {"name": "Fate Rewrite", "lines": ["Reroll an active card"], "desc": "Utility card used to replace one active modifier."}], "drop": [{"name": "Overflowing Wealth I", "lines": ["+15% Shard Drops"], "desc": "Increases shard rewards."}, {"name": "Overflowing Wealth II", "lines": ["+25% Shard Drops"], "desc": "Increases shard rewards."}, {"name": "Overflowing Wealth III", "lines": ["+40% Shard Drops"], "desc": "Increases shard rewards."}, {"name": "Elite Calling", "lines": ["+1 Elite Enemy", "+50% Drop Rate"], "desc": "Adds elite enemies and improves drop rate."}, {"name": "All or Nothing", "lines": ["+100% Rewards", "-50% Max Warrior HP"], "desc": "Huge reward boost with a large HP penalty."}, {"name": "Cursed Greed", "lines": ["+50% Rewards", "+40% Enemy HP"], "desc": "More rewards, but enemies become tankier."}, {"name": "Path of the Conqueror", "lines": ["+150% Rewards", "+100% Enemy HP"], "desc": "Legendary card with massive rewards and stronger enemies."}], "luck": [{"name": "Lucky Blessing I", "lines": ["+10% Drop Luck"], "desc": "Improves drop luck."}, {"name": "Lucky Blessing II", "lines": ["+20% Drop Luck"], "desc": "Improves drop luck."}, {"name": "Lucky Blessing III", "lines": ["+30% Drop Luck"], "desc": "Improves drop luck."}, {"name": "Time Rush", "lines": ["-20% Time Limit", "+50% Luck"], "desc": "Less time to clear, but much higher luck."}]};
+  const dropData = {"weapons": {"Raygun": ["Genyu (Mini-boss) - 3%", "Freeze (Boss) - 5%", "Freeze (2nd) (Secret-boss) - 7.5%"], "Power Pole": ["Freeze (Boss) - 2%", "Freeze (2nd) (Secret-boss) - 3%"], "Trunkos Sword": ["Freeze (Boss) - 2%", "Freeze (2nd) (Secret-boss) - 3%"], "Plasma Blaster": ["Android 17 (Mini-boss) - 3%", "Cel (Prime) (Boss) - 5%", "Super Cel (Prime) (Secret-boss) - 7.5%"], "Z Sword": ["Cel (Prime) (Boss) - 2%", "Super Cel (Prime) (Secret-boss) - 3%"], "Kunai": ["Gurra (Mini-boss) - 4%", "Orochi (Disguised) (Boss) - 6%", "Orochi (Secret-boss) - 9%"], "Anbu Blade": ["Gurra (Mini-boss) - 4%"], "Adamantine Staff": ["Orochi (Disguised) (Boss) - 4%", "Orochi (Secret-boss) - 6%"], "Clan Tanto": ["Orochi (Disguised) (Boss) - 3%", "Orochi (Secret-boss) - 4%"], "Cutlass": ["Ohem (Mini-boss) - 4%", "Enil (Boss) - 4%", "Enil (Storm) (Secret-boss) - 5%"], "Iron Cloud": ["Ohem (Mini-boss) - 2%", "Enil (Boss) - 3%", "Enil (Storm) (Secret-boss) - 4%"], "Heat Lance": ["Enil (Boss) - 1%", "Enil (Storm) (Secret-boss) - 1.5%"], "Thunder God Staff": ["Enil (Storm) (Secret-boss) - 0.2%"]}, "accessories": {"Gohun IIs Outfit": ["Raid: Destroyed Nemak - 0.9%"], "Carrots Outfit (Worned)": ["Raid: Destroyed Nemak - 1.2%", "Freeze (Boss) - 1%", "Freeze (2nd) (Secret-boss) - 1.5%"], "Pickles Cape": ["Raid: Destroyed Nemak - 1.9%", "Freeze (Boss) - 4%", "Freeze (2nd) (Secret-boss) - 6%"], "Freeze Force Uniform": ["Raid: Destroyed Nemak - 1.9%", "Freeze (Boss) - 4%", "Freeze (2nd) (Secret-boss) - 6%"], "Scouter": ["Raid: Destroyed Nemak - 2.3%", "Genyu (Mini-boss) - 4%", "Freeze (Boss) - 6%", "Freeze (2nd) (Secret-boss) - 9%"], "U. Gohuns Outfit": ["Raid: Red Ribbon Base - 1.1%"], "Plasmas Cape": ["Raid: Red Ribbon Base - 1.9%", "Cel (Prime) (Boss) - 2%", "Super Cel (Prime) (Secret-boss) - 3%"], "Red Ribbon Hat": ["Raid: Red Ribbon Base - 3.0%", "Android 17 (Mini-boss) - 3%", "Cel (Prime) (Boss) - 4%", "Super Cel (Prime) (Secret-boss) - 6%"], "17s Bandana": ["Raid: Red Ribbon Base - 3.7%", "Android 17 (Mini-boss) - 4%", "Cel (Prime) (Boss) - 6%", "Super Cel (Prime) (Secret-boss) - 9%"], "Dawn Cloak": ["Raid: Clan Hideout - 0.2%"], "Orochis Obi": ["Raid: Clan Hideout - 0.6%", "Orochi (Disguised) (Boss) - 1%", "Orochi (Secret-boss) - 1.5%"], "Gurras Gourd": ["Raid: Clan Hideout - 1.0%", "Gurra (Mini-boss) - 2%"], "Jonin Vest": ["Raid: Clan Hideout - 1.5%", "Orochi (Disguised) (Boss) - 4%", "Orochi (Secret-boss) - 6%"], "Fox Mask": ["Raid: Clan Hideout - 1.5%", "Gurra (Mini-boss) - 3%", "Orochi (Disguised) (Boss) - 4%", "Orochi (Secret-boss) - 6%"], "Ninja Headband (Crossed)": ["Raid: Clan Hideout - 1.5%"], "Ninja Headband": ["Raid: Clan Hideout - 1.5%", "Gurra (Mini-boss) - 3.5%", "Orochi (Disguised) (Boss) - 5%", "Orochi (Secret-boss) - 7.5%"], "Desert Warlord Coat": ["Raid: Desert Kingdom - 0.35%"], "Thunder Drums": ["Raid: Desert Kingdom - 0.6%", "Enil (Boss) - 1%", "Enil (Storm) (Secret-boss) - 1.5%"], "Orange Vest": ["Raid: Desert Kingdom - 1.1%"], "Sky Wings": ["Raid: Desert Kingdom - 1.5%", "Ohem (Mini-boss) - 3.5%", "Enil (Boss) - 4%", "Enil (Storm) (Secret-boss) - 6%"], "Robins Hat": ["Raid: Desert Kingdom - 1.5%", "Ohem (Mini-boss) - 4%", "Enil (Boss) - 5%", "Enil (Storm) (Secret-boss) - 7.5%"], "Deer Hat": ["Raid: Desert Kingdom - 1.8%"], "Freezes Helmet": ["Freeze (2nd) (Secret-boss) - 0.2%"], "Super Cels Wings": ["Super Cel (Prime) (Secret-boss) - 0.2%"], "Hebi": ["Orochi (Secret-boss) - 0.2%"]}, "relics": {"Gem of Greed (Weak)": ["Gauntlet floor 1+ - 1.5%"], "Gem of Protection (Weak)": ["Gauntlet floor 1+ - 1.5%"], "Gem of Power (Weak)": ["Gauntlet floor 1+ - 1.5%"], "Stone of Order": ["Gauntlet floor 10+ - 0.75%"], "Gem of Greed (Polished)": ["Gauntlet floor 10+ - 0.75%"], "Gem of Protection (Polished)": ["Gauntlet floor 10+ - 0.75%"], "Gem of Power (Polished)": ["Gauntlet floor 10+ - 0.75%"], "Golden Dew": ["Gauntlet floor 20+ - 0.35%"], "Gem of Greed (Grand)": ["Gauntlet floor 20+ - 0.35%"], "Gem of Protection (Grand)": ["Gauntlet floor 20+ - 0.35%"], "Gem of Power (Grand)": ["Gauntlet floor 20+ - 0.35%"], "Kings Amulet": ["Gauntlet floor 30+ - 0.1%"]}};
+  const damageCurve = [
+    [1, 600],
+    [2, 664],
+    [5, 910],
+    [10, 1551],
+    [25, 7830],
+    [50, 149851],
+    [70, 1670000]
+  ];
+
+  function abbreviate(value){
+    if(value >= 1000000) return (value / 1000000).toFixed(value >= 10000000 ? 1 : 2).replace(/\.0+$|0+$/,'') + 'M';
+    if(value >= 1000) return (value / 1000).toFixed(value >= 100000 ? 1 : 2).replace(/\.0+$|0+$/,'') + 'K';
+    return String(Math.round(value));
+  }
+
+  function warriorDamage(base, level){
+    const baseReference = 600;
+    if(level <= damageCurve[0][0]) return Math.round(base);
+    for(let i = 0; i < damageCurve.length - 1; i++){
+      const a = damageCurve[i];
+      const b = damageCurve[i + 1];
+      if(level >= a[0] && level <= b[0]){
+        const t = (level - a[0]) / (b[0] - a[0]);
+        const logA = Math.log(a[1] / baseReference);
+        const logB = Math.log(b[1] / baseReference);
+        return Math.round(base * Math.exp(logA + (logB - logA) * t));
+      }
+    }
+    const last = damageCurve[damageCurve.length - 1];
+    return Math.round(base * (last[1] / baseReference));
+  }
+
+  function renderSuperWarriors(){
+    const pane = document.getElementById('pane-s-warriors');
+    if(!pane) return;
+    pane.innerHTML = `
+      <div class="info-note">Informations may not be 100% Accurate</div>
+      <div class="lv-bar">
+        <span class="lv-lbl">Warrior Level</span>
+        <input type="range" class="lv-sl" id="sw-level-range" min="1" max="70" step="1" value="1">
+        <input type="number" class="lv-inp" id="sw-level-input" min="1" max="70" value="1">
+        <span class="lv-note">Damage uses estimated level scaling · max 70</span>
+      </div>
+      <div id="sw-list" class="extra-grid"></div>
+    `;
+
+    const range = document.getElementById('sw-level-range');
+    const input = document.getElementById('sw-level-input');
+    const list = document.getElementById('sw-list');
+
+    function draw(level){
+      range.value = level;
+      input.value = level;
+      list.innerHTML = superWarriors.map((w,index) => `
+        <div class="extra-card" style="animation-delay:${Math.min(index * 0.045, .22)}s">
+          <div class="extra-title">${w.name}</div>
+          <div class="extra-sub"><b>Special:</b> ${w.special}</div>
+          <div class="extra-sub">${w.desc}</div>
+          <div class="extra-stat"><span>Base DMG</span><span>${abbreviate(w.base)}</span></div>
+          <div class="extra-stat"><span>Level ${level} DMG</span><span>${abbreviate(warriorDamage(w.base, level))}</span></div>
+        </div>
+      `).join('');
+    }
+
+    function clampLevel(value){
+      return Math.min(70, Math.max(1, parseInt(value) || 1));
+    }
+
+    range.addEventListener('input', e => draw(clampLevel(e.target.value)));
+    input.addEventListener('blur', e => draw(clampLevel(e.target.value)));
+    input.addEventListener('keydown', e => {
+      if(e.key === 'Enter') e.target.blur();
+    });
+
+    draw(1);
+  }
+
+  function renderModifierGroup(group){
+    const list = document.getElementById('modifier-list');
+    if(!list) return;
+
+    const colors = {
+      damage: {
+        color: '#f87171',
+        border: 'rgba(248,113,113,.34)',
+        soft: 'rgba(248,113,113,.11)',
+        glow: 'rgba(248,113,113,.16)',
+        hover: 'rgba(248,113,113,.48)'
+      },
+      drop: {
+        color: '#34d399',
+        border: 'rgba(52,211,153,.34)',
+        soft: 'rgba(52,211,153,.11)',
+        glow: 'rgba(52,211,153,.15)',
+        hover: 'rgba(52,211,153,.48)'
+      },
+      luck: {
+        color: '#c084fc',
+        border: 'rgba(192,132,252,.36)',
+        soft: 'rgba(192,132,252,.12)',
+        glow: 'rgba(192,132,252,.16)',
+        hover: 'rgba(192,132,252,.52)'
+      }
+    };
+
+    const theme = colors[group] || colors.damage;
+
+    list.innerHTML = '<div class="extra-grid">' + gauntletModifiers[group].map((card,index) => `
+      <div class="modifier-card" style="--mod-color:${theme.color};--mod-border:${theme.border};--mod-soft:${theme.soft};--mod-glow:${theme.glow};--mod-hover:${theme.hover};animation-delay:${Math.min(index * 0.035, .22)}s">
+        <div class="modifier-title">${card.name}</div>
+        <div class="modifier-lines">
+          ${card.lines.map(line => `<span class="modifier-pill">${line}</span>`).join('')}
+        </div>
+        ${card.desc ? `<div class="modifier-desc">${card.desc}</div>` : ""}
+      </div>
+    `).join('') + '</div>';
+  }
+
+  function renderGauntletModifiers(){
+    const pane = document.getElementById('pane-g-modifiers');
+    if(!pane) return;
+    pane.innerHTML = `
+      <div class="extra-tabs-wrap">
+        <div class="mini-tabs" id="modifier-tabs">
+          <button class="mini-tab on" data-group="damage">Damage</button>
+          <button class="mini-tab" data-group="drop">Drop</button>
+          <button class="mini-tab" data-group="luck">Luck</button>
+        </div>
+        <div id="modifier-list" class="extra-list"></div>
+      </div>
+    `;
+    document.getElementById('modifier-tabs').addEventListener('click', e => {
+      const btn = e.target.closest('.mini-tab');
+      if(!btn) return;
+      document.querySelectorAll('#modifier-tabs .mini-tab').forEach(x => x.classList.toggle('on', x === btn));
+      renderModifierGroup(btn.dataset.group);
+    });
+    renderModifierGroup('damage');
+  }
+
+  function normalizeName(value){
+    return String(value).toLowerCase().replace(/[^a-z0-9]/g, '');
+  }
+
+  const rarityStyle = {
+    common: {label:'Common', color:'#9ca3af', order:1},
+    rare: {label:'Rare', color:'#60a5fa', order:2},
+    epic: {label:'Epic', color:'#c084fc', order:3},
+    legendary: {label:'Legendary', color:'#facc15', order:4},
+    mythical: {label:'Mythical', color:'#f87171', order:5},
+    exclusive: {label:'Exclusive', color:'#ff4dff', order:6},
+    unknown: {label:'Unknown', color:'#a78bfa', order:99}
+  };
+
+  function getDropMeta(name, group){
+    const allItems = []
+      .concat((typeof DATA !== 'undefined' && DATA.weapons) ? DATA.weapons.map(x => ({name:x.displayName || x.name, rarity:x.rarity, type:'Weapon'})) : [])
+      .concat((typeof DATA !== 'undefined' && DATA.accessories) ? DATA.accessories.map(x => ({name:x.name, rarity:x.rarity, type:'Accessory', slot:x.type})) : [])
+      .concat((typeof DATA !== 'undefined' && DATA.relics) ? DATA.relics.map(x => ({name:x.name, rarity:x.rarity, type:'Relic'})) : []);
+
+    const found = allItems.find(item => normalizeName(item.name) === normalizeName(name));
+    if(found) return found;
+
+    return {
+      name,
+      rarity: 'unknown',
+      type: group === 'weapons' ? 'Weapon' : group === 'accessories' ? 'Accessory' : 'Relic'
+    };
+  }
+
+  function renderDropGroup(group){
+    const list = document.getElementById('drops-list');
+    if(!list) return;
+
+    const data = dropData[group];
+    const items = Object.keys(data).map(name => {
+      const meta = getDropMeta(name, group);
+      const style = rarityStyle[meta.rarity] || rarityStyle.unknown;
+      return {name, sources:data[name], meta, style};
+    }).sort((a,b) => {
+      if(a.style.order !== b.style.order) return b.style.order - a.style.order;
+      return a.name.localeCompare(b.name);
+    });
+
+    const byRarity = {};
+    items.forEach(item => {
+      const key = item.meta.rarity || 'unknown';
+      if(!byRarity[key]) byRarity[key] = [];
+      byRarity[key].push(item);
+    });
+
+    const rarityKeys = Object.keys(byRarity).sort((a,b) => (rarityStyle[b]?.order || 99) - (rarityStyle[a]?.order || 99));
+
+    list.innerHTML = rarityKeys.map(rarity => {
+      const style = rarityStyle[rarity] || rarityStyle.unknown;
+      return `
+        <div class="drop-rarity-title" style="color:${style.color}">
+          <span>${style.label}</span>
+        </div>
+        <div class="extra-grid">
+          ${byRarity[rarity].map((item,index) => `
+            <div class="drop-card" style="--drop-color:${item.style.color};animation-delay:${Math.min(index * 0.035, .22)}s">
+              <div class="drop-name">${item.meta.name || item.name}</div>
+              <div class="drop-meta">
+                <span class="drop-pill">${item.meta.type}</span>
+                ${item.meta.slot ? `<span class="drop-pill">${item.meta.slot}</span>` : ''}
+                <span class="drop-pill" style="color:${item.style.color};border-color:${item.style.color}66">${item.style.label}</span>
+              </div>
+              <div class="drop-sources">
+                ${item.sources.map(source => `<div class="drop-line">${source}</div>`).join('')}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }).join('');
+  }
+
+  function renderDrops(){
+    const pane = document.getElementById('pane-drops');
+    if(!pane) return;
+    pane.innerHTML = `
+      <div class="extra-tabs-wrap">
+        <div class="mini-tabs" id="drops-tabs">
+          <button class="mini-tab on" data-group="weapons">Weapons</button>
+          <button class="mini-tab" data-group="accessories">Accessories</button>
+          <button class="mini-tab" data-group="relics">Relics</button>
+        </div>
+        <div id="drops-list" class="extra-list"></div>
+      </div>
+    `;
+    document.getElementById('drops-tabs').addEventListener('click', e => {
+      const btn = e.target.closest('.mini-tab');
+      if(!btn) return;
+      document.querySelectorAll('#drops-tabs .mini-tab').forEach(x => x.classList.toggle('on', x === btn));
+      renderDropGroup(btn.dataset.group);
+    });
+    renderDropGroup('weapons');
+  }
+
+  renderSuperWarriors();
+  renderGauntletModifiers();
+  renderDrops();
+})();
+</script>
+
 </body>
 </html>
